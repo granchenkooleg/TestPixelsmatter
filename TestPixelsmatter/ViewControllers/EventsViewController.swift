@@ -12,7 +12,7 @@ final class EventsViewController: UITableViewController {
     
     private  var events: Event?  {
         guard let fileURL = Bundle.main.url(forResource: "events", withExtension: "json"), let data = try? Data(contentsOf: fileURL) else {
-            print("Failed to read teachers file")
+            print("Failed to read events file")
             return nil
         }
         
